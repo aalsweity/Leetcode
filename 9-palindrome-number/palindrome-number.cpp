@@ -9,7 +9,9 @@ public:
         int j = istrSize - 1;
         while((i < istrSize) && (j >= 0))
         {
-            if(istr[i] != istr[j])
+            if(istr[i] != istr[j]) // Remember. An if check won't start if it's not true.
+                                    // If it were == instead, it would skip the check since it failed
+                                    // and just keep checking blindly.
                 {
                     return false;
                 }
