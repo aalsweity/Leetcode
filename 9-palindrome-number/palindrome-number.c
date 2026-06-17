@@ -1,6 +1,6 @@
 bool isPalindrome(int x) 
 {
-    char icarr[12]; // 2^31 is 10 digits at most, so reserve this much space as needed for problem.
+    char icarr[12]; // 2^31 is 10 digits at most, but for some reason, leet needs 12 due to overflow erorr occuring, so reserve this much space as needed for problem.
     sprintf(icarr, "%d", x);
     int icarrSize = strlen(icarr); // sizeof(icarr)/sizeof(icarr[0]); Do not use or else you get 10 as length of string
     int i = 0;                     // use strlen() function from string.h library. Assume leetcode gives all library use.
