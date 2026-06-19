@@ -1,7 +1,7 @@
 class Solution 
 {
 public:
-    string longestCommonPrefix(vector<string>& strs) 
+    string longestCommonPrefix(vector<string>& strs) // this answer took me over 2 hours to figure out.
     {
         string output = ""; //an empty result to start and to return if all cases fail.
         sort(strs.begin(), strs.end()); // sort vector first in alphabetical order.
