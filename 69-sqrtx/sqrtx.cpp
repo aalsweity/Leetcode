@@ -13,7 +13,7 @@ public:
         int result;
         while(low <= high)
         {
-            long int mid = low + (high - low)/2;
+            long int mid = low + (high - low)/2; // for some reason, int is not big enough for test cases
             
             if(mid*mid <= x) // change bounds to higher if number is equal or higher.
             {
